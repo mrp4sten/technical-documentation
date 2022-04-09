@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bash - Terminal</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>Terminal documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Ubuntu">Ubuntu</a></li>
+            <li><a class="nav-link" href="#Manager_Packages">Manager Packages</a></li>
+            <li><a class="nav-link" href="#Navigation">Navigation</a></li>
+            <li><a class="nav-link" href="#Editors">Editors</a></li>
+            <li><a class="nav-link" href="#Could_you_investigate">Could you investigate</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>
+                The terminal for all developers is a tool very important, because in
+                this tool we can update packages, install more tools, navigate into
+                directories, deploy our applications, programming with terminal
+                editors and more...
+            </p>
+            <p>
+                In this documentation I recopile some information that maybe can help
+                you to understand how you can use your terminal bash every day
+            </p>
+        </section>
+        <section id="Ubuntu" class="main-section">
+            <header>Ubuntu</header>
+            <p>
+                Ubuntu is a GNU/Linux distribution Debian based, is an operating
+                system open source and free, in this documentation I will show you how
+                to use an Gnome Terminal
+            </p>
+            <p>
+                Gnome is an type of desktop, exist another types of desktops that you
+                can use with your favorite distribution, like XFCE, KDE among others
+            </p>
+        </section>
+        <section id="Manager_Packages" class="main-section">
+            <header>Manager Packages</header>
+            <p>
+                Let's imagine you want to update your programs or you system for more
+                security, for this the package manager can help you
+            </p>
+            <p>
+                Exist many package manager like brew in MacOs, pacman for Arch linux
+                distributions, yarn for Fedora but Ubuntu and Debian based
+                distributins uses the package manager "apt"
+            </p>
+            <p>
+                If you need update completly your system I recommended you write the
+                next command in your terminal:
+            </p>
+            <code>sudo apt-get update -y && sudo apt-get upgrade -y</code>
+            <p>
+                If you want clean your packages and your innesesary packages you can
+                write:
+            </p>
+            <code>sudo apt-get autoclean && sudo apt-get autoremove -y</code>
+        </section>
+        <section id="Navigation" class="main-section">
+            <header>Navigation</header>
+            <p>Basiclly you can navigate with a few commands, for example:</p>
+            <p>You can list the information into a directory with the command:</p>
+            <code>ls</code>
+            <p>
+                If you want enter into a directory you can write the next command:
+            </p>
+            <code>cd name_directory</code>
+            <p>If you want to leave a directory you can write the next command:</p>
+            <code>cd ..</code>
+            <p>In the case that you want create a directory:</p>
+            <code>mkdir name_directory</code>
+            <p>But if you want remove a directory</p>
+            <code>rm -r name_directory</code>
+            <p>The next command is for create files</p>
+            <code>touch name_file</code>
+            <p>For remove files</p>
+            <code>rm name_file</code>
+        </section>
+        <section id="Editors" class="main-section">
+            <header>Editors</header>
+            <p>
+                In linux exist many terminal editors, but the most popular are nano
+                and vim
+            </p>
+            <p>
+                Personally I like vim because is many fast, minimlist and simple, you
+                really can create a programm or a web application with this editor
+                with help of plugins
+            </p>
+            <p>You can install neovim this is exactly vim but current</p>
+            <code>sudo apt-get install neovim -y</code>
+            <p>for edit a file for example:</p>
+            <code>nvim name_file</code>
+            <p>into neovim you can navigate up with the keyboard</p>
+            <code>k</code>
+            <p>down with:</p>
+            <code>j</code>
+            <p>right with:</p>
+            <code>l</code>
+            <p>left with</p>
+            <code>h</code>
+            <p>for write into a file with vim you can press</p>
+            <code>i</code>
+            <p>
+                this mode is for insert, if you want navigate into a file you should
+                press the key
+            </p>
+            <code>esc</code>
+            <p>if you want save a file</p>
+            <code>:w</code>
+            <p>for exit of vim</p>
+            <code>:q</code>
+        </section>
+        <section id="Could_you_investigate" class="main-section">
+            <header>Could you investigate</header>
+            <ul>
+                <li>Neovim</li>
+                <li>Zsh</li>
+                <li>Fish</li>
+                <li>cmd</li>
+                <li>Arch linux</li>
+                <li>Fedora linux</li>
+                <li>Nano editor</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
